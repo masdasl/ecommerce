@@ -43,7 +43,7 @@ const ProductDetails = () => {
       <div className="row container product-details">
         <div className="col-md-6">
           <img
-            src={`/api/v1/product/product-photo/${product._id}`}
+            src={`https://ecommerce-11h9.onrender.com/api/v1/product/product-photo/${product._id}`}
             className="card-img-top"
             alt={product.name}
             height="300"
@@ -75,7 +75,7 @@ const ProductDetails = () => {
           {realtedProduct?.map((p) => (
             <div className="card m-2" key={p._id}>
               <img
-                src={`/api/v1/product/product-photo/${p._id}`}
+                src={`https://ecommerce-11h9.onrender.com//v1/product/product-photo/${p._id}`}
                 className="card-img-top"
                 alt={p.name}
               />

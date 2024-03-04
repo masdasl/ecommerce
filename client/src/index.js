@@ -7,6 +7,9 @@ import { BrowserRouter } from "react-router-dom";
 import { AuthProvider } from "./context/auth";
 import { CartProvider } from "./context/cart";
 import { SearchProvider } from "./context/search";
+import axios from "axios";
+
+axios.defaults.baseURL = " https://ecommerce-11h9.onrender.com/";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
